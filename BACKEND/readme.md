@@ -112,6 +112,18 @@ This project is a REST API for managing Company and Contact data using Excel fil
    npm install
    ```
 
+   ```bash
+    npm install cors@^2.8.5
+    npm install dotenv@^16.4.5
+    npm install express@^4.19.2
+    npm install express-async-handler@^1.2.0
+    npm install mongoose@^8.5.3
+    npm install multer@^1.4.5-lts.1
+    npm install nodemon@^3.1.4
+    npm install vercel@^37.1.0
+    npm install xlsx@^0.18.5
+   ```
+
 3. Set up your `.env` file (see [Environment Variables](#environment-variables)).
 
 ## **Environment Variables**
