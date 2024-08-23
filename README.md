@@ -42,6 +42,18 @@ This application allows users to upload Excel sheets containing Company and Cont
 - **Error Handling**: Only the rows with valid data will be uploaded. Rows with errors need to be corrected and re-uploaded.
 - **Feedback**: The application provides visual feedback for file selection, uploading, and error notifications to ensure the user is aware of the application's state.
 
+### Demo Data
+Below is a sample table that demonstrates the expected format for company-related information:
+
+markdown
+Copy code
+| Company Name       | Company Code  | Contact Name       | Email                    | Date of Birth       |
+|--------------------|---------------|--------------------|--------------------------|---------------------|
+| Acme Corp          | 2000000000000 | John Doe           | johndoe@acmecorp.com     | 1980-05-12          |
+| Global Industries  | 2400000000000 | Jane Smith         | janesmith@globalind.com  | 1975-11-23          |
+| Tech Solutions     | 3200000000000 | Emily Johnson      | emilyj@techsolutions.com | 1990-02-14          |
+Feel free to use this format as a reference when entering your own company data. Ensure that all fields are accurately filled out according to the specified headings.
+
 ---
 
 ## **README**
@@ -95,6 +107,19 @@ Company-Contact-excel-upload-app/
    # or
    yarn install
    ```
+   ```bash
+   npm install @emotion/react@^11.13.3
+   npm install @emotion/styled@^11.13.0
+   npm install @mui/icons-material@^5.16.7
+   npm install @mui/material@^5.16.7
+   npm install axios@^1.7.4
+   npm install react@^18.3.1
+   npm install react-dom@^18.3.1
+   npm install react-scripts@^5.0.1
+   npm install react-toastify@^10.0.5
+```
+
+
 
 #### **Running the Application**
 
@@ -103,10 +128,9 @@ Company-Contact-excel-upload-app/
    ```bash
    npm start
    # or
-   yarn start
+   yarn run dev
    ```
 
-   The application will start, and you can access it at `http://localhost:3000`.
 
 #### **Building for Production**
 
