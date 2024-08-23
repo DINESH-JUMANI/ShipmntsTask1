@@ -3,7 +3,7 @@
 
 ### **Overview**
 
-This API allows users to upload Excel files containing book and author data. It validates the data, provides feedback on any errors, and saves the valid data to a MongoDB database.
+This API allows users to upload Excel files containing Company and contact data. It validates the data, provides feedback on any errors, and saves the valid data to a MongoDB database.
 
 ### **Base URL**
 
@@ -23,54 +23,19 @@ http://localhost:5000/api
 - **Response**:
   - **Status 200**: Returns the valid data and any errors found during validation.
   - **Status 400**: No file uploaded or file size exceeds the limit.
-- **Example Response**:
-  ```json
-  {
-    "validData": [
-      {
-        "name": "Book Title",
-        "isbn_code": "1234567890",
-        "author_name": "Author Name",
-        "email": "author@example.com",
-        "date_of_birth": "1990-01-01T00:00:00.000Z"
-      }
-    ],
-    "invalidData": [
-      {
-        "rowIndex": 3,
-        "errors": [
-          "ISBN Code: Must be a valid 10 digit [divisible by 11] or 13 digit [divisible by 10] ISBN"
-        ]
-      }
-    ],
-    "message": "Some rows contain errors"
-  }
-  ```
+- 
 
 #### 2. **Save Valid Data to Database**
 
 - **Endpoint**: `/save`
 - **Method**: `POST`
 - **Description**: Saves the valid data from the uploaded Excel file to the database.
-- **Request Body**: JSON object with a `validData` array containing the valid book and author information.
+- **Request Body**: JSON object with a `validData` array containing the valid Company and Contact information.
 - **Response**:
   - **Status 201**: Data saved successfully.
   - **Status 204**: No data to save.
   - **Status 400**: Validation errors or bad request.
-- **Example Request Body**:
-  ```json
-  {
-    "validData": [
-      {
-        "name": "Book Title",
-        "isbn_code": "1234567890",
-        "author_name": "Author Name",
-        "email": "author@example.com",
-        "date_of_birth": "1990-01-01T00:00:00.000Z"
-      }
-    ]
-  }
-  ```
+- 
 
 - **Example Response**:
   ```json
@@ -88,9 +53,9 @@ All error responses will include a status code and a message. For example, if th
 ## **README.md**
 
 ```markdown
-# Book and Author Management API
+# Company and Contact Management API
 
-This project is a REST API for managing book and author data using Excel file uploads. The API validates data from the Excel file and saves the valid entries into a MongoDB database.
+This project is a REST API for managing Company and Contact data using Excel file uploads. The API validates data from the Excel file and saves the valid entries into a MongoDB database.
 
 ## **Table of Contents**
 
@@ -111,8 +76,8 @@ This project is a REST API for managing book and author data using Excel file up
 ├── middlewares
 │   └── errorMiddleware.js # Error handling middleware
 ├── models
-│   ├── Author.js         # Mongoose schema for Author
-│   └── Book.js           # Mongoose schema for Book
+│   ├── Contact.js         # Mongoose schema for Contact
+│   └── Company.js           # Mongoose schema for Company
 ├── routes
 │   └── fileUploadRoutes.js # Routes for file upload and data saving
 ├── utils
@@ -137,8 +102,8 @@ This project is a REST API for managing book and author data using Excel file up
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/book-author-api.git
-   cd book-author-api
+   git clone https://github.com/DINESH-JUMANI/ShipmntsTask1.git
+   cd BACKEND
    ```
 
 2. Install dependencies:

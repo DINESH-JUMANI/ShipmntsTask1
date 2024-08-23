@@ -1,12 +1,12 @@
-## **Documentation for Book and Author Excel Upload Application**
+## **Documentation for Company and Contact Excel Upload Application**
 
 ### **Overview**
 
-This application allows users to upload Excel sheets containing book and author data, validate the data, view errors if any, and confirm the upload of valid data to the system.
+This application allows users to upload Excel sheets containing Company and Contact data, validate the data, view errors if any, and confirm the upload of valid data to the system.
 
 ### **Features**
 
-- **File Upload**: Upload Excel files (.xls, .xlsx) containing book and author data.
+- **File Upload**: Upload Excel files (.xls, .xlsx) containing Company and Contact data.
 - **Data Validation**: Automatically validate the uploaded data to check for any errors or inconsistencies.
 - **Error Display**: Display a list of errors for any invalid data found in the uploaded file.
 - **Data Review**: View the valid data in a tabular format.
@@ -46,14 +46,14 @@ This application allows users to upload Excel sheets containing book and author 
 
 ## **README**
 
-### **Book and Author Excel Upload Application**
+### **Company and Contact Excel Upload Application**
 
-This application allows users to upload and validate Excel files containing books and authors data.
+This application allows users to upload and validate Excel files containing Company and Contact data.
 
 ### **Folder Structure**
 
 ```plaintext
-book-author-excel-upload-app/
+Company-Contact-excel-upload-app/
 ├── public/
 │   └── index.html
 ├── src/
@@ -84,8 +84,8 @@ book-author-excel-upload-app/
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/your-username/book-author-excel-upload-app.git
-   cd book-author-excel-upload-app
+   git clone https://github.com/DINESH-JUMANI/ShipmntsTask1.git
+   cd FRONTEND
    ```
 
 2. **Install Dependencies**:
